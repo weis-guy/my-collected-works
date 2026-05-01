@@ -29,14 +29,21 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Nicholas Weising — Writing, Research & Public Affairs" },
+      {
+        name: "description",
+        content:
+          "The published writing and media appearances of Nicholas Weising — Program Assistant at the Center for Maritime Strategy. Geopolitics, industrial policy, maritime security, national security law.",
+      },
+      { name: "author", content: "Nicholas Weising" },
+      { property: "og:title", content: "Nicholas Weising" },
+      {
+        property: "og:description",
+        content:
+          "Writing and media on geopolitics, industrial policy, maritime security, and national security law.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
     ],
     links: [
       {
