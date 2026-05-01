@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
+import { SocialLinks, socialLinks } from "@/components/SocialLinks";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -46,6 +47,29 @@ function ContactPage() {
               {email}
             </a>
           </p>
+        </div>
+
+        <div className="mt-12 border-t border-rule pt-8">
+          <p className="smallcaps text-[0.7rem] text-accent-ink mb-4 text-center">
+            Elsewhere
+          </p>
+          <div className="flex justify-center">
+            <SocialLinks size={26} />
+          </div>
+          <ul className="mt-6 flex flex-col sm:flex-row sm:justify-center gap-2 sm:gap-8 font-serif text-base text-ink-muted">
+            {socialLinks.map(({ label, href }) => (
+              <li key={label} className="text-center">
+                <a
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-accent-ink transition-colors"
+                >
+                  {label}
+                </a>
+              </li>
+            ))}
+          </ul>
         </div>
 
         <div className="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-8 border-t border-rule pt-8">

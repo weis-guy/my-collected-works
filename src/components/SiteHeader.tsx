@@ -1,4 +1,5 @@
 import { Link } from "@tanstack/react-router";
+import { useEffect, useState } from "react";
 
 const nav = [
   { to: "/", label: "Home" },
@@ -9,18 +10,25 @@ const nav = [
 ] as const;
 
 export function SiteHeader() {
+  const [today, setToday] = useState("");
+  useEffect(() => {
+    setToday(
+      new Date().toLocaleDateString("en-US", {
+        weekday: "long",
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+      }),
+    );
+  }, []);
+
   return (
     <header className="border-b border-rule bg-paper">
       <div className="mx-auto max-w-5xl px-6 pt-8 pb-4">
         <div className="flex items-center justify-between gap-6 text-[0.7rem] text-ink-muted smallcaps">
           <span>Vol. I &nbsp;·&nbsp; Washington, D.C.</span>
-          <span className="hidden sm:inline">
-            {new Date().toLocaleDateString("en-US", {
-              weekday: "long",
-              year: "numeric",
-              month: "long",
-              day: "numeric",
-            })}
+          <span className="hidden sm:inline" suppressHydrationWarning>
+            {today}
           </span>
         </div>
         <Link to="/" className="block text-center mt-2">
