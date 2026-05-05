@@ -26,57 +26,28 @@ function WritingPage() {
   return (
     <div className="min-h-screen bg-paper text-ink">
       <SiteHeader />
-      <main className="mx-auto max-w-3xl px-6 py-12">
-        <p className="smallcaps text-[0.7rem] text-accent-ink mb-3">Section</p>
-        <h2 className="font-serif text-5xl font-semibold tracking-tight">Writing</h2>
-        <p className="mt-4 font-serif text-xl italic text-ink-muted leading-relaxed">
-          Essays, analysis, and commentary — published in policy journals and
-          national security outlets.
-        </p>
-        <div className="mt-10 editorial-rule-double border-t" />
-
-        <ul className="divide-y divide-rule">
+      <main className="mx-auto max-w-3xl px-6">
+        <h1 className="text-2xl font-medium mb-8">Writing</h1>
+        <ul className="space-y-8">
           {writings.map((w) => (
-            <li key={w.url} className="py-8">
-              <p className="smallcaps text-[0.68rem] text-ink-muted mb-2">
-                {w.outlet} &nbsp;·&nbsp; {w.date}
-              </p>
-              <h3 className="font-serif text-3xl font-semibold leading-tight">
-                <a
-                  href={w.url}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="hover:text-accent-ink"
-                >
-                  {w.title}
-                </a>
-              </h3>
-              {w.dek && (
-                <p className="mt-3 font-serif text-lg leading-relaxed text-ink">
-                  {w.dek}
-                </p>
-              )}
-              <div className="mt-4 flex items-center gap-4 text-[0.7rem] smallcaps">
-                {w.topics?.map((t) => (
-                  <span key={t} className="text-ink-muted">
-                    {t}
-                  </span>
-                ))}
-                <a
-                  href={w.url}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="ml-auto text-accent-ink hover:underline"
-                >
-                  Read →
-                </a>
+            <li key={w.url} className="text-base leading-relaxed">
+              <a
+                href={w.url}
+                target="_blank"
+                rel="noreferrer"
+                className="underline underline-offset-2 hover:text-accent-ink"
+              >
+                {w.title}
+              </a>
+              <div className="text-sm text-ink-muted mt-1">
+                {w.outlet} · {w.date}
               </div>
+              {w.dek && <p className="mt-2 text-ink-muted">{w.dek}</p>}
             </li>
           ))}
         </ul>
-
-        <p className="mt-12 font-serif italic text-ink-muted">
-          Additional pieces will be added as they are published.
+        <p className="mt-12 text-sm text-ink-muted">
+          More pieces will be added as they're published.
         </p>
       </main>
       <SiteFooter />

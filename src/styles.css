@@ -71,12 +71,12 @@
 
 :root {
   --radius: 0.25rem;
-  /* Editorial palette: ivory paper, deep ink, oxblood accent */
-  --paper: oklch(0.972 0.012 85);
-  --ink: oklch(0.18 0.018 60);
-  --ink-muted: oklch(0.42 0.018 60);
-  --accent-ink: oklch(0.42 0.13 27);
-  --rule: oklch(0.82 0.018 70);
+  /* Minimal palette: white paper, near-black ink, muted gray */
+  --paper: oklch(1 0 0);
+  --ink: oklch(0.2 0 0);
+  --ink-muted: oklch(0.5 0 0);
+  --accent-ink: oklch(0.45 0.15 250);
+  --rule: oklch(0.9 0 0);
 
   --background: var(--paper);
   --foreground: var(--ink);
