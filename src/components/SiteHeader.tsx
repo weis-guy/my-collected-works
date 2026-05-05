@@ -1,5 +1,4 @@
 import { Link } from "@tanstack/react-router";
-import { useEffect, useState } from "react";
 
 const nav = [
   { to: "/", label: "Home" },
@@ -10,52 +9,29 @@ const nav = [
 ] as const;
 
 export function SiteHeader() {
-  const [today, setToday] = useState("");
-  useEffect(() => {
-    setToday(
-      new Date().toLocaleDateString("en-US", {
-        weekday: "long",
-        year: "numeric",
-        month: "long",
-        day: "numeric",
-      }),
-    );
-  }, []);
-
   return (
-    <header className="border-b border-rule bg-paper">
-      <div className="mx-auto max-w-5xl px-6 pt-8 pb-4">
-        <div className="flex items-center justify-between gap-6 text-[0.7rem] text-ink-muted smallcaps">
-          <span>Vol. I &nbsp;·&nbsp; Washington, D.C.</span>
-          <span className="hidden sm:inline" suppressHydrationWarning>
-            {today}
-          </span>
-        </div>
-        <Link to="/" className="block text-center mt-2">
-          <h1 className="font-serif text-5xl sm:text-6xl md:text-7xl font-semibold tracking-tight text-ink">
-            Nicholas Weising
-          </h1>
-          <p className="mt-2 text-[0.72rem] smallcaps text-ink-muted">
-            Writing &nbsp;·&nbsp; Research &nbsp;·&nbsp; Public Affairs
-          </p>
+    <header className="mx-auto max-w-3xl px-6 pt-10 pb-12">
+      <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-4">
+        <Link to="/" className="text-xl font-medium text-ink hover:text-accent-ink transition-colors">
+          Nicholas Weising
         </Link>
+        <nav>
+          <ul className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-ink-muted">
+            {nav.map((item) => (
+              <li key={item.to}>
+                <Link
+                  to={item.to}
+                  activeOptions={{ exact: item.to === "/" }}
+                  activeProps={{ className: "text-ink underline underline-offset-4" }}
+                  className="hover:text-ink transition-colors"
+                >
+                  {item.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
       </div>
-      <nav className="border-t border-b border-rule">
-        <ul className="mx-auto max-w-5xl flex flex-wrap items-center justify-center gap-x-8 gap-y-2 px-6 py-3 text-[0.72rem] smallcaps text-ink">
-          {nav.map((item) => (
-            <li key={item.to}>
-              <Link
-                to={item.to}
-                activeOptions={{ exact: item.to === "/" }}
-                activeProps={{ className: "text-accent-ink underline underline-offset-4" }}
-                className="hover:text-accent-ink transition-colors"
-              >
-                {item.label}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </nav>
     </header>
   );
 }
