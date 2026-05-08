@@ -21,8 +21,9 @@ export type Appearance = {
   title: string;
   date: string;
   url: string;
-  format: "Television" | "Podcast" | "Radio" | "Panel" | "Interview" | "Press";
+  format: "Television" | "Podcast" | "Radio" | "Panel" | "Interview" | "Press" | "Reprint" | "Citation";
   dek?: string;
+  reprints?: { outlet: string; url: string }[];
 };
 
 export const writings: Writing[] = [
@@ -127,9 +128,74 @@ export const appearances: Appearance[] = [
     outlet: "PBS NewsHour",
     title:
       "College Campuses Become Focus of Debate Over What Constitutes Free Speech",
-    date: "PBS NewsHour broadcast",
+    date: "2024",
     url: "https://www.pbs.org/newshour/show/college-campuses-become-focus-of-debate-over-what-constitutes-free-speech",
     format: "Television",
-    dek: "Featured in a national broadcast segment examining the contested boundaries of campus free expression.",
+    dek: "Featured in a national broadcast segment on the contested boundaries of campus free expression.",
+  },
+  {
+    outlet: "Cornell Daily Sun",
+    title: "ChatGPT Generates Buzz Regarding Concerns of Academic Integrity",
+    date: "2023",
+    url: "https://cornellsun.com/2023/01/30/chatgpt-generates-buzz-regarding-concerns-of-academic-integrity/",
+    format: "Press",
+    dek: "Quoted on the implications of generative AI tools for university academic integrity policies.",
+  },
+  {
+    outlet: "Cornell Daily Sun",
+    title:
+      "Campus Residential Advisors Discuss Experiences, Concerns Over Compensation",
+    date: "2022",
+    url: "https://cornellsun.com/2022/11/17/campus-residential-advisors-discuss-experiences-concerns-over-compensation/",
+    format: "Press",
+    dek: "Quoted on the working conditions and compensation structure for Cornell residential advisors.",
+  },
+  {
+    outlet: "Pittsburgh Tribune-Review",
+    title: "St. Sebastian STEM Class Makes Learning Fun for Students",
+    date: "2019",
+    url: "https://archive.triblive.com/news/st-sebastian-stem-class-makes-learning-fun-for-students/",
+    format: "Press",
+    dek: "Local coverage of a community STEM education initiative.",
+  },
+  {
+    outlet: "Pittsburgh Tribune-Review",
+    title:
+      "Shaler Eagle Scout Reserves Seat for Americans Who Are MIA",
+    date: "2019",
+    url: "https://archive.triblive.com/local/hampton-shaler/shaler-eagle-scout-reserves-seat-for-americans-who-are-mia/",
+    format: "Press",
+    dek: "Local coverage of an Eagle Scout project honoring American service members missing in action.",
+  },
+  {
+    outlet: "Multiple outlets",
+    title:
+      "\"AusAID Can Take USAID's Place in the Pacific Islands\" — reprints & citations",
+    date: "2025",
+    url: "https://www.aspistrategist.org.au/ausaid-can-take-usaids-place-in-the-pacific-islands/",
+    format: "Reprint",
+    dek: "The original ASPI Strategist piece was republished and cited across the Pacific and European policy press.",
+    reprints: [
+      {
+        outlet: "Pacific Islands News Association (PINA)",
+        url: "https://pina.com.fj/2025/02/20/australia-can-take-usaids-place-in-the-pacific-islands/",
+      },
+      {
+        outlet: "Island Times",
+        url: "https://islandtimes.org/australia-can-take-usaids-place-in-the-pacific-islands/",
+      },
+      {
+        outlet: "The Runway (Royal Australian Air Force)",
+        url: "https://runway.airforce.gov.au/ausaid-can-take-usaids-place-in-the-pacific-islands",
+      },
+      {
+        outlet: "National Indigenous Times",
+        url: "https://nit.com.au/16-04-2025/17434/us-support-to-maintain-foreign-aid-for-pacific-nations",
+      },
+      {
+        outlet: "European Parliamentary Research Service",
+        url: "https://www.europarl.europa.eu/thinktank/en/document/EPRS_BRI(2025)772875",
+      },
+    ],
   },
 ];
