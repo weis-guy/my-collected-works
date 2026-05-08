@@ -43,6 +43,23 @@ function MediaPage() {
                 {a.outlet} · {a.format} · {a.date}
               </div>
               {a.dek && <p className="mt-2 text-ink-muted">{a.dek}</p>}
+              {a.reprints && a.reprints.length > 0 && (
+                <ul className="mt-3 space-y-1 text-sm text-ink-muted">
+                  {a.reprints.map((r) => (
+                    <li key={r.url}>
+                      ·{" "}
+                      <a
+                        href={r.url}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="underline underline-offset-2 hover:text-accent-ink"
+                      >
+                        {r.outlet}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              )}
             </li>
           ))}
         </ul>
