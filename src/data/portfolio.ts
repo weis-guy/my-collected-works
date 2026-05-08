@@ -21,8 +21,9 @@ export type Appearance = {
   title: string;
   date: string;
   url: string;
-  format: "Television" | "Podcast" | "Radio" | "Panel" | "Interview" | "Press";
+  format: "Television" | "Podcast" | "Radio" | "Panel" | "Interview" | "Press" | "Reprint" | "Citation";
   dek?: string;
+  reprints?: { outlet: string; url: string }[];
 };
 
 export const writings: Writing[] = [
