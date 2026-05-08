@@ -7,12 +7,21 @@ export type Writing = {
   topics?: string[];
 };
 
+export type Project = {
+  title: string;
+  role: string;
+  outlet: string;
+  date: string;
+  url?: string;
+  dek?: string;
+};
+
 export type Appearance = {
   outlet: string;
   title: string;
   date: string;
   url: string;
-  format: "Television" | "Podcast" | "Radio" | "Panel" | "Interview";
+  format: "Television" | "Podcast" | "Radio" | "Panel" | "Interview" | "Press";
   dek?: string;
 };
 
@@ -35,6 +44,8 @@ export const writings: Writing[] = [
     topics: ["Geopolitics", "Pacific"],
   },
 ];
+
+export const projects: Project[] = [];
 
 export const appearances: Appearance[] = [
   {
