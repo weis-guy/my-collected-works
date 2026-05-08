@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteFooter } from "@/components/SiteFooter";
+import headshot from "@/assets/headshot.jpg";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -18,12 +19,11 @@ function Index() {
     <div className="min-h-screen bg-paper text-ink flex flex-col">
       <main className="flex-1 mx-auto max-w-2xl w-full px-6 pt-24 sm:pt-32">
         <div className="flex flex-col sm:flex-row sm:items-start gap-10">
-          <div
-            aria-label="Headshot placeholder"
-            className="shrink-0 w-36 h-36 sm:w-44 sm:h-44 rounded-full border border-rule bg-[oklch(0.96_0_0)] flex items-center justify-center text-xs text-ink-muted"
-          >
-            Headshot
-          </div>
+          <img
+            src={headshot}
+            alt="Nicholas Weising"
+            className="shrink-0 w-36 h-36 sm:w-44 sm:h-44 rounded-full object-cover border border-rule"
+          />
           <div className="space-y-5">
             <h1 className="text-2xl font-medium leading-snug">
               Nicholas Weising

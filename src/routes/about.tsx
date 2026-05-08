@@ -30,7 +30,7 @@ function AboutPage() {
         <h1 className="text-2xl font-medium mb-8">About</h1>
         <div className="space-y-5 text-base leading-relaxed">
           <p>
-            I'm a Program Assistant at the{" "}
+            I'm a Program Associate at the{" "}
             <a
               href="https://centerformaritimestrategy.org/"
               target="_blank"
@@ -74,10 +74,12 @@ function AboutPage() {
           </h2>
           <p className="text-base leading-relaxed">
             <a
-              href="/cv.pdf"
+              href="/NicholasWeisingCV.pdf"
+              target="_blank"
+              rel="noreferrer"
               className="underline underline-offset-2 hover:text-accent-ink"
             >
-              Download CV (PDF)
+              View CV (PDF)
             </a>
           </p>
         </section>
