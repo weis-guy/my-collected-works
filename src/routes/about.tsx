@@ -43,12 +43,11 @@ function AboutPage() {
             seapower, alliance politics, and the defense industrial base.
           </p>
           <p>
-            My research interests include geopolitics, industrial policy,
-            maritime security, and national security law. I write about how
-            the United States and its allies organize policy, capital, and
-            law to compete in an increasingly contested maritime environment
-            — from the submarine industrial workforce at home to development
-            assistance across the Pacific.
+            My work sits at the intersection of statecraft, industry, and
+            law. I write about how the United States and its allies organize
+            policy, capital, and law to compete in an increasingly contested
+            maritime environment — from the submarine industrial workforce
+            at home to development assistance across the Pacific.
           </p>
           <p>
             I'm preparing to pursue a legal education focused on national
@@ -56,6 +55,32 @@ function AboutPage() {
             scholarship, policy, and practice.
           </p>
         </div>
+
+        <section className="mt-12">
+          <h2 className="text-sm font-medium text-ink-muted uppercase tracking-wide mb-3">
+            Areas of focus
+          </h2>
+          <ul className="text-base leading-relaxed list-disc pl-5 space-y-1">
+            <li>Geopolitics</li>
+            <li>Industrial policy</li>
+            <li>Maritime security</li>
+            <li>National security law</li>
+          </ul>
+        </section>
+
+        <section className="mt-12">
+          <h2 className="text-sm font-medium text-ink-muted uppercase tracking-wide mb-3">
+            Curriculum vitae
+          </h2>
+          <p className="text-base leading-relaxed">
+            <a
+              href="/cv.pdf"
+              className="underline underline-offset-2 hover:text-accent-ink"
+            >
+              Download CV (PDF)
+            </a>
+          </p>
+        </section>
       </main>
       <SiteFooter />
     </div>
