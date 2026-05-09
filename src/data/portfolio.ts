@@ -21,6 +21,7 @@ export type Project = {
   role: string;
   outlet: string;
   date: string;
+  format?: string;
   url?: string;
   dek?: string;
 };
@@ -135,7 +136,35 @@ export const writings: Writing[] = [
   },
 ];
 
-export const projects: Project[] = [];
+export const projects: Project[] = [
+  {
+    title:
+      "Pier Review: Leveraging the Allied Maritime Industrial Base for U.S. Shipbuilding",
+    role: "Contributor",
+    outlet: "Center for Maritime Strategy",
+    date: "2025",
+    format: "Policy Report",
+    url: "https://centerformaritimestrategy.org/publications/pier-review/",
+    dek: "Year-long research project comparing the shipbuilding industries of U.S. allies and partners to identify best practices and encourage collaboration. Authored the South Korea chapter and accompanied ADM James Foggo, USN (ret.) on shipyard visits and interviews in Korea. Acknowledged by name in the final report.",
+  },
+  {
+    title: "Consolidating Municipalities in Allegheny County",
+    role: "Author",
+    outlet: "Cornell Policy Group (formerly Roosevelt Institute)",
+    date: "Spring 2022",
+    format: "Policy Memo",
+    dek: "Policy proposal examining the case for municipal consolidation in Allegheny County, Pennsylvania as a mechanism for improving governance and fiscal efficiency. Available upon request.",
+  },
+  {
+    title:
+      "Introducing Opioid Fatality Harm-Reduction Methods in West Virginia",
+    role: "Author",
+    outlet: "Cornell Policy Group (formerly Roosevelt Institute)",
+    date: "Fall 2021",
+    format: "Policy Memo",
+    dek: "Policy proposal recommending harm-reduction interventions to address the opioid crisis in West Virginia. Available upon request.",
+  },
+];
 
 export const appearances: Appearance[] = [
   {
