@@ -37,6 +37,13 @@ export type Appearance = {
 
 export const writings: Writing[] = [
   {
+    title: "What a NATO-Skeptic U.S. Means for NATO Maritime Security",
+    outlet: "The MOC — Center for Maritime Strategy",
+    date: "2025",
+    url: "https://centerformaritimestrategy.org/publications/what-a-nato-skeptic-u-s-means-for-nato-maritime-security/",
+    dek: "Implications for the alliance's maritime posture as Washington's commitment to NATO comes into question.",
+  },
+  {
     title: "AusAID Can Take USAID's Place in the Pacific Islands",
     outlet: "The Strategist — ASPI",
     date: "2025",
@@ -50,23 +57,16 @@ export const writings: Writing[] = [
     ],
   },
   {
-    title: "What a NATO-Skeptic U.S. Means for NATO Maritime Security",
-    outlet: "The MOC — Center for Maritime Strategy",
-    date: "2025",
-    url: "https://centerformaritimestrategy.org/publications/what-a-nato-skeptic-u-s-means-for-nato-maritime-security/",
-    dek: "Implications for the alliance's maritime posture as Washington's commitment to NATO comes into question.",
-  },
-  {
     title: "The Weakest Link: Single Points of Failure and Toward a National Cybersecurity",
     outlet: "The MOC — Center for Maritime Strategy",
-    date: "2025",
+    date: "2024",
     url: "https://centerformaritimestrategy.org/publications/the-weakest-link-single-points-of-failure-and-toward-a-national-cybersecurity/",
     dek: "How concentrated dependencies in critical infrastructure create systemic cybersecurity risks.",
   },
   {
     title: "Military Personnel Need Robust Financial Education More Than Ever",
     outlet: "The MOC — Center for Maritime Strategy",
-    date: "2025",
+    date: "2024",
     url: "https://centerformaritimestrategy.org/publications/military-personnel-need-robust-financial-education-more-than-ever/",
     dek: "The case for stronger financial literacy programs across the U.S. armed forces.",
   },
@@ -85,27 +85,6 @@ export const writings: Writing[] = [
     dek: "Reviving apprenticeship pipelines to rebuild America's defense manufacturing workforce.",
   },
   {
-    title: "Prioritizing Dockworkers Upholds U.S. National Security",
-    outlet: "The MOC — Center for Maritime Strategy",
-    date: "2024",
-    url: "https://centerformaritimestrategy.org/publications/prioritizing-dockworkers-upholds-u-s-national-security/",
-    dek: "Why the people who move cargo through American ports are a national security asset.",
-  },
-  {
-    title: "Resolving Maritime Border Dispute Opens Door for Increased Energy Security",
-    outlet: "The MOC — Center for Maritime Strategy",
-    date: "2024",
-    url: "https://centerformaritimestrategy.org/publications/resolving-maritime-border-dispute-opens-door-for-increased-energy-security/",
-    dek: "How settling contested waters can unlock new pathways for allied energy security.",
-  },
-  {
-    title: "Subs to the Aussies: Impact of the AUKUS Partnership",
-    outlet: "The MOC — Center for Maritime Strategy",
-    date: "2023",
-    url: "https://centerformaritimestrategy.org/publications/subs-to-the-aussies-impact-of-the-aukus-partnership/",
-    dek: "Assessing the strategic and industrial implications of transferring Virginia-class submarines under AUKUS.",
-  },
-  {
     title: "The Pursuit of Life Without Work",
     outlet: "The Vocation Project (Substack)",
     date: "2024",
@@ -121,6 +100,27 @@ export const writings: Writing[] = [
     dek: "The ACA's outsized role in protecting health coverage for New York's college student population.",
   },
   {
+    title: "Prioritizing Dockworkers Upholds U.S. National Security",
+    outlet: "The MOC — Center for Maritime Strategy",
+    date: "2023",
+    url: "https://centerformaritimestrategy.org/publications/prioritizing-dockworkers-upholds-u-s-national-security/",
+    dek: "Why the people who move cargo through American ports are a national security asset.",
+  },
+  {
+    title: "Resolving Maritime Border Dispute Opens Door for Increased Energy Security",
+    outlet: "The MOC — Center for Maritime Strategy",
+    date: "2023",
+    url: "https://centerformaritimestrategy.org/publications/resolving-maritime-border-dispute-opens-door-for-increased-energy-security/",
+    dek: "How settling contested waters can unlock new pathways for allied energy security.",
+  },
+  {
+    title: "Subs to the Aussies: Impact of the AUKUS Partnership",
+    outlet: "The MOC — Center for Maritime Strategy",
+    date: "2023",
+    url: "https://centerformaritimestrategy.org/publications/subs-to-the-aussies-impact-of-the-aukus-partnership/",
+    dek: "Assessing the strategic and industrial implications of transferring Virginia-class submarines under AUKUS.",
+  },
+  {
     title: "What West Virginia v. EPA Means for IP",
     outlet: "Cornell Intellectual Property and Ethics Club",
     date: "2022",
@@ -130,7 +130,7 @@ export const writings: Writing[] = [
   {
     title: "The Fractured GOP Under Trump",
     outlet: "The Viking — Central Catholic High School",
-    date: "2020",
+    date: "2018",
     url: "https://cchsviking.com/2255/opinion/the-fractured-gop-under-trump/",
     dek: "An early opinion piece on the realignment of the Republican party under Donald Trump.",
   },
@@ -148,7 +148,7 @@ export const projects: Project[] = [
     dek: "Year-long research project comparing the shipbuilding industries of U.S. allies and partners to identify best practices and encourage collaboration. Authored the South Korea chapter and accompanied ADM James Foggo, USN (ret.) on shipyard visits and interviews in Korea. Acknowledged by name in the final report.",
   },
   {
-    title: "Consolidating Municipalities in Allegheny County",
+    title: "Bunches of Boroughs: Consolidating Municipalities in Allegheny County",
     role: "Author",
     outlet: "Cornell Policy Group (formerly Roosevelt Institute)",
     date: "Spring 2022",
@@ -171,7 +171,7 @@ export const appearances: Appearance[] = [
     outlet: "PBS NewsHour",
     title:
       "College Campuses Become Focus of Debate Over What Constitutes Free Speech",
-    date: "2024",
+    date: "2023",
     url: "https://www.pbs.org/newshour/show/college-campuses-become-focus-of-debate-over-what-constitutes-free-speech",
     format: "Television",
     dek: "Featured in a national broadcast segment on the contested boundaries of campus free expression.",
@@ -195,20 +195,20 @@ export const appearances: Appearance[] = [
   },
   {
     outlet: "Pittsburgh Tribune-Review",
-    title: "St. Sebastian STEM Class Makes Learning Fun for Students",
-    date: "2019",
-    url: "https://archive.triblive.com/news/st-sebastian-stem-class-makes-learning-fun-for-students/",
-    format: "Press",
-    dek: "Local coverage of a community STEM education initiative.",
-  },
-  {
-    outlet: "Pittsburgh Tribune-Review",
     title:
       "Shaler Eagle Scout Reserves Seat for Americans Who Are MIA",
-    date: "2019",
+    date: "2018",
     url: "https://archive.triblive.com/local/hampton-shaler/shaler-eagle-scout-reserves-seat-for-americans-who-are-mia/",
     format: "Press",
     dek: "Local coverage of an Eagle Scout project honoring American service members missing in action.",
+  },
+  {
+    outlet: "Pittsburgh Tribune-Review",
+    title: "St. Sebastian STEM Class Makes Learning Fun for Students",
+    date: "2015",
+    url: "https://archive.triblive.com/news/st-sebastian-stem-class-makes-learning-fun-for-students/",
+    format: "Press",
+    dek: "Local coverage of a community STEM education initiative.",
   },
 ];
 
@@ -222,4 +222,3 @@ export const citations: Citation[] = [
     dek: "EPRS briefing on Pacific aid policy citing the ASPI Strategist piece.",
   },
 ];
-
