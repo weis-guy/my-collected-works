@@ -5,6 +5,15 @@ export type Writing = {
   url: string;
   dek?: string;
   topics?: string[];
+  republishedIn?: { outlet: string; url: string }[];
+};
+
+export type Citation = {
+  institution: string;
+  title: string;
+  date: string;
+  url: string;
+  dek?: string;
 };
 
 export type Project = {
@@ -21,9 +30,8 @@ export type Appearance = {
   title: string;
   date: string;
   url: string;
-  format: "Television" | "Podcast" | "Radio" | "Panel" | "Interview" | "Press" | "Reprint" | "Citation";
+  format: "Television" | "Podcast" | "Radio" | "Panel" | "Interview" | "Press";
   dek?: string;
-  reprints?: { outlet: string; url: string }[];
 };
 
 export const writings: Writing[] = [
@@ -33,6 +41,12 @@ export const writings: Writing[] = [
     date: "2025",
     url: "https://www.aspistrategist.org.au/ausaid-can-take-usaids-place-in-the-pacific-islands/",
     dek: "Why Canberra is well-positioned to fill the development vacuum left by Washington across the Pacific.",
+    republishedIn: [
+      { outlet: "Pacific Islands News Association (PINA)", url: "https://pina.com.fj/2025/02/20/australia-can-take-usaids-place-in-the-pacific-islands/" },
+      { outlet: "Island Times", url: "https://islandtimes.org/australia-can-take-usaids-place-in-the-pacific-islands/" },
+      { outlet: "The Runway (Royal Australian Air Force)", url: "https://runway.airforce.gov.au/ausaid-can-take-usaids-place-in-the-pacific-islands" },
+      { outlet: "National Indigenous Times", url: "https://nit.com.au/16-04-2025/17434/us-support-to-maintain-foreign-aid-for-pacific-nations" },
+    ],
   },
   {
     title: "What a NATO-Skeptic U.S. Means for NATO Maritime Security",
@@ -167,35 +181,16 @@ export const appearances: Appearance[] = [
     format: "Press",
     dek: "Local coverage of an Eagle Scout project honoring American service members missing in action.",
   },
+];
+
+export const citations: Citation[] = [
   {
-    outlet: "Multiple outlets",
+    institution: "European Parliamentary Research Service",
     title:
-      "\"AusAID Can Take USAID's Place in the Pacific Islands\" — reprints & citations",
+      "Briefing cited \"AusAID Can Take USAID's Place in the Pacific Islands\"",
     date: "2025",
-    url: "https://www.aspistrategist.org.au/ausaid-can-take-usaids-place-in-the-pacific-islands/",
-    format: "Reprint",
-    dek: "The original ASPI Strategist piece was republished and cited across the Pacific and European policy press.",
-    reprints: [
-      {
-        outlet: "Pacific Islands News Association (PINA)",
-        url: "https://pina.com.fj/2025/02/20/australia-can-take-usaids-place-in-the-pacific-islands/",
-      },
-      {
-        outlet: "Island Times",
-        url: "https://islandtimes.org/australia-can-take-usaids-place-in-the-pacific-islands/",
-      },
-      {
-        outlet: "The Runway (Royal Australian Air Force)",
-        url: "https://runway.airforce.gov.au/ausaid-can-take-usaids-place-in-the-pacific-islands",
-      },
-      {
-        outlet: "National Indigenous Times",
-        url: "https://nit.com.au/16-04-2025/17434/us-support-to-maintain-foreign-aid-for-pacific-nations",
-      },
-      {
-        outlet: "European Parliamentary Research Service",
-        url: "https://www.europarl.europa.eu/thinktank/en/document/EPRS_BRI(2025)772875",
-      },
-    ],
+    url: "https://www.europarl.europa.eu/thinktank/en/document/EPRS_BRI(2025)772875",
+    dek: "EPRS briefing on Pacific aid policy citing the ASPI Strategist piece.",
   },
 ];
+
