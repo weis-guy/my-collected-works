@@ -43,6 +43,28 @@ function WritingPage() {
                 {w.outlet} · {w.date}
               </div>
               {w.dek && <p className="mt-2 text-ink-muted">{w.dek}</p>}
+              {w.republishedIn && w.republishedIn.length > 0 && (
+                <p className="mt-2 text-sm text-ink-muted">
+                  Also republished in{" "}
+                  {w.republishedIn.map((r, i) => (
+                    <span key={r.url}>
+                      <a
+                        href={r.url}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="underline underline-offset-2 hover:text-accent-ink"
+                      >
+                        {r.outlet}
+                      </a>
+                      {i < w.republishedIn!.length - 2
+                        ? ", "
+                        : i === w.republishedIn!.length - 2
+                          ? ", and "
+                          : "."}
+                    </span>
+                  ))}
+                </p>
+              )}
             </li>
           ))}
         </ul>
