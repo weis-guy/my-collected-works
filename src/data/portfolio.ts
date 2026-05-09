@@ -37,13 +37,6 @@ export type Appearance = {
 
 export const writings: Writing[] = [
   {
-    title: "What a NATO-Skeptic U.S. Means for NATO Maritime Security",
-    outlet: "The MOC — Center for Maritime Strategy",
-    date: "2025",
-    url: "https://centerformaritimestrategy.org/publications/what-a-nato-skeptic-u-s-means-for-nato-maritime-security/",
-    dek: "Implications for the alliance's maritime posture as Washington's commitment to NATO comes into question.",
-  },
-  {
     title: "AusAID Can Take USAID's Place in the Pacific Islands",
     outlet: "The Strategist — ASPI",
     date: "2025",
@@ -55,6 +48,13 @@ export const writings: Writing[] = [
       { outlet: "The Runway (Royal Australian Air Force)", url: "https://runway.airforce.gov.au/ausaid-can-take-usaids-place-in-the-pacific-islands" },
       { outlet: "National Indigenous Times", url: "https://nit.com.au/16-04-2025/17434/us-support-to-maintain-foreign-aid-for-pacific-nations" },
     ],
+  },
+  {
+    title: "What a NATO-Skeptic U.S. Means for NATO Maritime Security",
+    outlet: "The MOC — Center for Maritime Strategy",
+    date: "2024",
+    url: "https://centerformaritimestrategy.org/publications/what-a-nato-skeptic-u-s-means-for-nato-maritime-security/",
+    dek: "Implications for the alliance's maritime posture as Washington's commitment to NATO comes into question.",
   },
   {
     title: "The Weakest Link: Single Points of Failure and Toward a National Cybersecurity",
