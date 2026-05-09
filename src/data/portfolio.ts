@@ -42,6 +42,12 @@ export const writings: Writing[] = [
     date: "2025",
     url: "https://www.aspistrategist.org.au/ausaid-can-take-usaids-place-in-the-pacific-islands/",
     dek: "Why Canberra is well-positioned to fill the development vacuum left by Washington across the Pacific.",
+    republishedIn: [
+      { outlet: "Pacific Islands News Association (PINA)", url: "https://pina.com.fj/2025/02/20/australia-can-take-usaids-place-in-the-pacific-islands/" },
+      { outlet: "Island Times", url: "https://islandtimes.org/australia-can-take-usaids-place-in-the-pacific-islands/" },
+      { outlet: "The Runway (Royal Australian Air Force)", url: "https://runway.airforce.gov.au/ausaid-can-take-usaids-place-in-the-pacific-islands" },
+      { outlet: "National Indigenous Times", url: "https://nit.com.au/16-04-2025/17434/us-support-to-maintain-foreign-aid-for-pacific-nations" },
+    ],
   },
   {
     title: "What a NATO-Skeptic U.S. Means for NATO Maritime Security",
