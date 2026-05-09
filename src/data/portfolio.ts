@@ -39,7 +39,7 @@ export const writings: Writing[] = [
   {
     title: "What a NATO-Skeptic U.S. Means for NATO Maritime Security",
     outlet: "The MOC — Center for Maritime Strategy",
-    date: "2025",
+    date: "2024",
     url: "https://centerformaritimestrategy.org/publications/what-a-nato-skeptic-u-s-means-for-nato-maritime-security/",
     dek: "Implications for the alliance's maritime posture as Washington's commitment to NATO comes into question.",
   },
