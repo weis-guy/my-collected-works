@@ -5,6 +5,15 @@ export type Writing = {
   url: string;
   dek?: string;
   topics?: string[];
+  republishedIn?: { outlet: string; url: string }[];
+};
+
+export type Citation = {
+  institution: string;
+  title: string;
+  date: string;
+  url: string;
+  dek?: string;
 };
 
 export type Project = {
