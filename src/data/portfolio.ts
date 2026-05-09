@@ -30,9 +30,8 @@ export type Appearance = {
   title: string;
   date: string;
   url: string;
-  format: "Television" | "Podcast" | "Radio" | "Panel" | "Interview" | "Press" | "Reprint" | "Citation";
+  format: "Television" | "Podcast" | "Radio" | "Panel" | "Interview" | "Press";
   dek?: string;
-  reprints?: { outlet: string; url: string }[];
 };
 
 export const writings: Writing[] = [
