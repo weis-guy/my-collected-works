@@ -55,7 +55,9 @@ function ProjectsPage() {
                 <li key={p.title} className="text-base leading-relaxed">
                   {Title}
                   <div className="text-sm text-ink-muted mt-1">
-                    {p.role} · {p.outlet} · {p.date}
+                    {[p.role, p.outlet, p.format, p.date]
+                      .filter(Boolean)
+                      .join(" · ")}
                   </div>
                   {p.dek && <p className="mt-2 text-ink-muted">{p.dek}</p>}
                 </li>
