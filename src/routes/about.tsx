@@ -72,15 +72,8 @@ function AboutPage() {
           <h2 className="text-sm font-medium text-ink-muted uppercase tracking-wide mb-3">
             Curriculum vitae
           </h2>
-          <p className="text-base leading-relaxed">
-            <a
-              href="/NicholasWeisingCV.pdf"
-              target="_blank"
-              rel="noreferrer"
-              className="underline underline-offset-2 hover:text-accent-ink"
-            >
-              View CV (PDF)
-            </a>
+          <p className="text-base leading-relaxed text-ink-muted">
+            Resume available upon request.
           </p>
         </section>
       </main>
