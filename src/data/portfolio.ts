@@ -168,6 +168,14 @@ export const projects: Project[] = [
 
 export const appearances: Appearance[] = [
   {
+    outlet: "AI+ Expo (SCSP)",
+    title: "Automation and Innovation in Allied Shipbuilding",
+    date: "2026",
+    url: "https://vimeo.com/1192722193",
+    format: "Panel",
+    dek: "Diving into insights from their latest study, \"Pier Review: Leveraging the Allied Maritime Industrial Base for U.S. Shipbuilding,\" the Center for Maritime Strategy will discuss innovations in automation, robotics, and AI in shipbuilding operations of U.S. allies.",
+  },
+  {
     outlet: "PBS NewsHour",
     title:
       "College Campuses Become Focus of Debate Over What Constitutes Free Speech",
