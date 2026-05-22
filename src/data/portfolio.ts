@@ -168,20 +168,20 @@ export const projects: Project[] = [
 
 export const appearances: Appearance[] = [
   {
+    outlet: "Center for Maritime Strategy",
+    title: "Pier Review: Washington D.C. Report Launch",
+    date: "2026",
+    url: "https://www.youtube.com/watch?v=ufL8abk6FfY",
+    format: "Panel",
+    dek: "Served as a panelist at the Washington D.C. launch of Pier Review at the Navy League Building, discussing my contributions to the report — including the South Korea chapter and shipyard visits with ADM James Foggo III — alongside the CMS team.",
+  },
+  {
     outlet: "AI+ Expo (SCSP)",
     title: "Automation and Innovation in Allied Shipbuilding",
     date: "2026",
     url: "https://vimeo.com/1192722193",
     format: "Panel",
-    dek: "Diving into insights from their latest study, \"Pier Review: Leveraging the Allied Maritime Industrial Base for U.S. Shipbuilding,\" the Center for Maritime Strategy will discuss innovations in automation, robotics, and AI in shipbuilding operations of U.S. allies.",
-  },
-  {
-    outlet: "Center for Maritime Strategy",
-    title: "Pier Review: Washington D.C. Report Launch",
-    date: "2025",
-    url: "https://www.youtube.com/watch?v=ufL8abk6FfY",
-    format: "Panel",
-    dek: "Washington D.C. launch of Pier Review: Leveraging the Allied Maritime Industrial Base for U.S. Shipbuilding at the Navy League Building, Arlington, VA. Panelists included ADM James Foggo III MSC, Matthew Reisener, Dr. Steve Wills, and Nick Weising.",
+    dek: "Joined the Center for Maritime Strategy panel to share findings from Pier Review, drawing on my research and shipyard visits in South Korea to discuss how allied automation, robotics, and AI practices can strengthen U.S. shipbuilding.",
   },
   {
     outlet: "PBS NewsHour",
