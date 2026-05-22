@@ -176,6 +176,14 @@ export const appearances: Appearance[] = [
     dek: "Diving into insights from their latest study, \"Pier Review: Leveraging the Allied Maritime Industrial Base for U.S. Shipbuilding,\" the Center for Maritime Strategy will discuss innovations in automation, robotics, and AI in shipbuilding operations of U.S. allies.",
   },
   {
+    outlet: "Center for Maritime Strategy",
+    title: "Pier Review: Washington D.C. Report Launch",
+    date: "2025",
+    url: "https://www.youtube.com/watch?v=ufL8abk6FfY",
+    format: "Panel",
+    dek: "Washington D.C. launch of Pier Review: Leveraging the Allied Maritime Industrial Base for U.S. Shipbuilding at the Navy League Building, Arlington, VA. Panelists included ADM James Foggo III MSC, Matthew Reisener, Dr. Steve Wills, and Nick Weising.",
+  },
+  {
     outlet: "PBS NewsHour",
     title:
       "College Campuses Become Focus of Debate Over What Constitutes Free Speech",
