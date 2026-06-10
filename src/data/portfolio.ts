@@ -168,6 +168,14 @@ export const projects: Project[] = [
 
 export const appearances: Appearance[] = [
   {
+    outlet: "American Defense Alliance",
+    title: "U.S. Navy Imperatives – Shipbuilding and Fleet Readiness",
+    date: "2026",
+    url: "https://www.youtube.com/watch?v=vr--hSHaq4k",
+    format: "Panel",
+    dek: "Panelist at the 2026 Navy & Marine Corps Procurement Conference in Norfolk, Virginia, discussing U.S. Navy shipbuilding and fleet readiness imperatives.",
+  },
+  {
     outlet: "Center for Maritime Strategy",
     title: "Pier Review: Washington D.C. Report Launch",
     date: "2026",
