@@ -183,7 +183,7 @@ export const appearances: Appearance[] = [
     format: "Podcast",
     dek: "Discussed my research and first-hand observations from shipyard visits in South Korea as part of the Pier Review study, exploring how allied shipyard practices and AI can inform U.S. shipbuilding.",
   },
-    outlet: "Center for Maritime Strategy",
+  {
     title: "Pier Review: Washington D.C. Report Launch",
     date: "2026",
     url: "https://www.youtube.com/watch?v=ufL8abk6FfY",
