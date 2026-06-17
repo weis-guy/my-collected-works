@@ -177,6 +177,13 @@ export const appearances: Appearance[] = [
   },
   {
     outlet: "Center for Maritime Strategy",
+    title: "Learning from Allied Foreign Shipyards and Utilizing AI",
+    date: "2026",
+    url: "https://centerformaritimestrategy.org/publications/learning-from-allied-foreign-shipyards-and-utilizing-ai-pier-review-study/",
+    format: "Podcast",
+    dek: "Discussed my research and first-hand observations from shipyard visits in South Korea as part of the Pier Review study, exploring how allied shipyard practices and AI can inform U.S. shipbuilding.",
+  },
+    outlet: "Center for Maritime Strategy",
     title: "Pier Review: Washington D.C. Report Launch",
     date: "2026",
     url: "https://www.youtube.com/watch?v=ufL8abk6FfY",
