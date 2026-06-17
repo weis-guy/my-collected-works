@@ -168,20 +168,20 @@ export const projects: Project[] = [
 
 export const appearances: Appearance[] = [
   {
-    outlet: "American Defense Alliance",
-    title: "U.S. Navy Imperatives – Shipbuilding and Fleet Readiness",
-    date: "2026",
-    url: "https://www.youtube.com/watch?v=vr--hSHaq4k",
-    format: "Panel",
-    dek: "Panelist at the 2026 Navy & Marine Corps Procurement Conference in Norfolk, Virginia, discussing U.S. Navy shipbuilding and fleet readiness imperatives.",
-  },
-  {
     outlet: "Center for Maritime Strategy",
     title: "Learning from Allied Foreign Shipyards and Utilizing AI",
     date: "2026",
     url: "https://centerformaritimestrategy.org/publications/learning-from-allied-foreign-shipyards-and-utilizing-ai-pier-review-study/",
     format: "Podcast",
     dek: "Discussed my research and first-hand observations from shipyard visits in South Korea as part of the Pier Review study, exploring how allied shipyard practices and AI can inform U.S. shipbuilding.",
+  },
+  {
+    outlet: "American Defense Alliance",
+    title: "U.S. Navy Imperatives – Shipbuilding and Fleet Readiness",
+    date: "2026",
+    url: "https://www.youtube.com/watch?v=vr--hSHaq4k",
+    format: "Panel",
+    dek: "Panelist at the 2026 Navy & Marine Corps Procurement Conference in Norfolk, Virginia, discussing U.S. Navy shipbuilding and fleet readiness imperatives.",
   },
   {
     outlet: "Center for Maritime Strategy",
