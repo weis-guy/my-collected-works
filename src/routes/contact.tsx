@@ -124,7 +124,7 @@ function ContactPage() {
               <Button type="submit" disabled={state.submitting}>
                 {state.submitting ? "Sending..." : "Send message"}
               </Button>
-              {state.errors && state.errors.length > 0 && (
+              {state.errors && state.errors.getFormErrors().length > 0 && (
                 <p className="text-sm text-destructive">
                   Something went wrong. Please try again.
                 </p>
