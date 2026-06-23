@@ -1,5 +1,5 @@
-import { useForm, ValidationError } from "@formspree/react";
 import { createFileRoute } from "@tanstack/react-router";
+import { type FormEvent, useState } from "react";
 
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
@@ -8,6 +8,9 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
+
+const FORMSPREE_ENDPOINT =
+  import.meta.env.VITE_FORMSPREE_ENDPOINT || "https://formspree.io/f/mjgqvlzk";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -29,9 +32,41 @@ export const Route = createFileRoute("/contact")({
 });
 
 function ContactPage() {
-  const [state, handleSubmit] = useForm("mjgqvlzk");
+  const [status, setStatus] = useState<"idle" | "submitting" | "succeeded" | "error">(
+    "idle",
+  );
+  const [errorMessage, setErrorMessage] = useState("");
 
-  if (state.succeeded) {
+  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    setStatus("submitting");
+    setErrorMessage("");
+
+    const form = event.currentTarget;
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch(FORMSPREE_ENDPOINT, {
+        method: "POST",
+        body: formData,
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+      if (!response.ok) {
+        throw new Error("Formspree rejected the submission.");
+      }
+
+      form.reset();
+      setStatus("succeeded");
+    } catch {
+      setStatus("error");
+      setErrorMessage("Something went wrong. Please try again.");
+    }
+  }
+
+  if (status === "succeeded") {
     return (
       <div className="min-h-screen bg-paper text-ink">
         <SiteHeader />
@@ -42,11 +77,7 @@ function ContactPage() {
               Thank you for your message. I will get back to you as soon as I
               can.
             </p>
-            <Button
-              variant="outline"
-              onClick={() => window.location.reload()}
-              type="button"
-            >
+            <Button variant="outline" onClick={() => setStatus("idle")} type="button">
               Send another message
             </Button>
           </div>
@@ -71,7 +102,12 @@ function ContactPage() {
             speaking engagements, send a message below.
           </p>
 
-          <form onSubmit={handleSubmit} className="space-y-6">
+          <form
+            action={FORMSPREE_ENDPOINT}
+            method="POST"
+            onSubmit={handleSubmit}
+            className="space-y-6"
+          >
             <div className="space-y-2">
               <Label htmlFor="name">Name</Label>
               <Input
@@ -80,11 +116,6 @@ function ContactPage() {
                 name="name"
                 required
                 maxLength={100}
-              />
-              <ValidationError
-                field="name"
-                errors={state.errors}
-                className="text-sm text-destructive"
               />
             </div>
 
@@ -97,11 +128,6 @@ function ContactPage() {
                 required
                 maxLength={255}
               />
-              <ValidationError
-                field="email"
-                errors={state.errors}
-                className="text-sm text-destructive"
-              />
             </div>
 
             <div className="space-y-2">
@@ -113,22 +139,13 @@ function ContactPage() {
                 required
                 maxLength={2000}
               />
-              <ValidationError
-                field="message"
-                errors={state.errors}
-                className="text-sm text-destructive"
-              />
             </div>
 
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
-              <Button type="submit" disabled={state.submitting}>
-                {state.submitting ? "Sending..." : "Send message"}
+              <Button type="submit" disabled={status === "submitting"}>
+                {status === "submitting" ? "Sending..." : "Send message"}
               </Button>
-              {state.errors && state.errors.getFormErrors().length > 0 && (
-                <p className="text-sm text-destructive">
-                  Something went wrong. Please try again.
-                </p>
-              )}
+              {status === "error" && <p className="text-sm text-destructive">{errorMessage}</p>}
             </div>
           </form>
         </div>
