@@ -9,8 +9,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 
-const FORMSPREE_ENDPOINT =
-  import.meta.env.VITE_FORMSPREE_ENDPOINT || "https://formspree.io/f/mjgqvlzk";
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/mjgqvlzk";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
