@@ -23,6 +23,13 @@ export const Route = createFileRoute("/media")({
 });
 
 function MediaPage() {
+  const speaking = appearances.filter((a) =>
+    ["Podcast", "Panel", "Radio", "Interview"].includes(a.format)
+  );
+  const press = appearances.filter((a) =>
+    ["Television", "Press"].includes(a.format)
+  );
+
   return (
     <div className="min-h-screen bg-paper text-ink">
       <SiteHeader />
@@ -30,9 +37,31 @@ function MediaPage() {
         <h1 className="text-2xl font-medium mb-8">Media</h1>
 
         <section>
-          <h2 className="text-lg font-medium mb-6">Appearances</h2>
+          <h2 className="text-lg font-medium mb-6">Speaking Engagements</h2>
           <ul className="space-y-8">
-            {appearances.map((a) => (
+            {speaking.map((a) => (
+              <li key={a.url} className="text-base leading-relaxed">
+                <a
+                  href={a.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="underline underline-offset-2 hover:text-accent-ink"
+                >
+                  {a.title}
+                </a>
+                <div className="text-sm text-ink-muted mt-1">
+                  {a.outlet} · {a.format} · {a.date}
+                </div>
+                {a.dek && <p className="mt-2 text-ink-muted">{a.dek}</p>}
+              </li>
+            ))}
+          </ul>
+        </section>
+
+        <section className="mt-16">
+          <h2 className="text-lg font-medium mb-6">Media Interviews &amp; Press</h2>
+          <ul className="space-y-8">
+            {press.map((a) => (
               <li key={a.url} className="text-base leading-relaxed">
                 <a
                   href={a.url}
