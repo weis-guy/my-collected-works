@@ -52,7 +52,6 @@ export const writings: Writing[] = [
       { outlet: "Pacific Islands News Association (PINA)", url: "https://pina.com.fj/2025/04/02/australia-can-take-usaids-place-in-the-pacific-islands/" },
       { outlet: "Island Times", url: "https://islandtimes.org/australia-can-take-usaids-place-in-the-pacific-islands/" },
       { outlet: "The Runway (Royal Australian Air Force)", url: "https://runway.airforce.gov.au/ausaid-can-take-usaids-place-in-the-pacific-islands" },
-      { outlet: "National Indigenous Times", url: "https://nit.com.au/16-04-2025/17434/us-support-to-maintain-foreign-aid-for-pacific-nations" },
     ],
   },
   {
