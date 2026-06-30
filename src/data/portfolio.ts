@@ -52,7 +52,6 @@ export const writings: Writing[] = [
       { outlet: "Pacific Islands News Association (PINA)", url: "https://pina.com.fj/2025/04/02/australia-can-take-usaids-place-in-the-pacific-islands/" },
       { outlet: "Island Times", url: "https://islandtimes.org/australia-can-take-usaids-place-in-the-pacific-islands/" },
       { outlet: "The Runway (Royal Australian Air Force)", url: "https://runway.airforce.gov.au/ausaid-can-take-usaids-place-in-the-pacific-islands" },
-      { outlet: "National Indigenous Times", url: "https://nit.com.au/16-04-2025/17434/us-support-to-maintain-foreign-aid-for-pacific-nations" },
     ],
   },
   {
@@ -266,5 +265,12 @@ export const citations: Citation[] = [
     date: "2025",
     url: "https://www.europarl.europa.eu/thinktank/en/document/EPRS_BRI(2025)772875",
     dek: "EPRS briefing on Pacific aid policy citing the ASPI Strategist piece.",
+  },
+  {
+    institution: "National Indigenous Times",
+    title: "US Support to Maintain Foreign Aid for Pacific Nations",
+    date: "2025",
+    url: "https://nit.com.au/16-04-2025/17434/us-support-to-maintain-foreign-aid-for-pacific-nations",
+    dek: "Quoted directly from the ASPI Strategist article 'AusAID Can Take USAID's Place in the Pacific Islands'.",
   },
 ];
