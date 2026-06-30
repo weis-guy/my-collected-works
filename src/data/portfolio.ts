@@ -34,8 +34,14 @@ export type Appearance = {
   format: "Television" | "Podcast" | "Radio" | "Panel" | "Interview" | "Press";
   dek?: string;
 };
-
 export const writings: Writing[] = [
+  {
+    title: "Cracks in Civil-Military Trust are Widening",
+    outlet: "Defense Opinion",
+    date: "2026",
+    url: "https://defenseopinion.com/the-cracks-in-civil-military-trust-are-widening/1222/",
+    dek: "The state of U.S. civil-military relations is the most precarious it has been in many decades, with public confidence in the military falling sharply.",
+  },
   {
     title: "AusAID Can Take USAID's Place in the Pacific Islands",
     outlet: "The Strategist — ASPI",
