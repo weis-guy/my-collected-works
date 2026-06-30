@@ -266,4 +266,11 @@ export const citations: Citation[] = [
     url: "https://www.europarl.europa.eu/thinktank/en/document/EPRS_BRI(2025)772875",
     dek: "EPRS briefing on Pacific aid policy citing the ASPI Strategist piece.",
   },
+  {
+    institution: "National Indigenous Times",
+    title: "US Support to Maintain Foreign Aid for Pacific Nations",
+    date: "2025",
+    url: "https://nit.com.au/16-04-2025/17434/us-support-to-maintain-foreign-aid-for-pacific-nations",
+    dek: "Quoted directly from the ASPI Strategist article 'AusAID Can Take USAID's Place in the Pacific Islands'.",
+  },
 ];
