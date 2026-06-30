@@ -34,7 +34,7 @@ export type Appearance = {
   format: "Television" | "Podcast" | "Radio" | "Panel" | "Interview" | "Press";
   dek?: string;
 };
-
+export const writings: Writing[] = [
   {
     title: "Cracks in Civil-Military Trust are Widening",
     outlet: "Defense Opinion",
