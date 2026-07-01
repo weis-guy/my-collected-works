@@ -6,13 +6,13 @@ import { appearances, citations } from "@/data/portfolio";
 export const Route = createFileRoute("/media")({
   head: () => ({
     meta: [
-      { title: "Media — Nicholas Weising" },
+      { title: "Speaking & Media — Nicholas Weising" },
       {
         name: "description",
         content:
           "Television, podcast, and panel appearances featuring Nicholas Weising, plus institutional citations of his work.",
       },
-      { property: "og:title", content: "Media — Nicholas Weising" },
+      { property: "og:title", content: "Speaking & Media — Nicholas Weising" },
       {
         property: "og:description",
         content: "Appearances, press quotes, and citations of work.",
@@ -34,7 +34,7 @@ function MediaPage() {
     <div className="min-h-screen bg-paper text-ink">
       <SiteHeader />
       <main className="mx-auto max-w-3xl px-6">
-        <h1 className="text-2xl font-medium mb-8">Media</h1>
+        <h1 className="text-2xl font-medium mb-8">Speaking & Media</h1>
 
         <section>
           <h2 className="text-lg font-medium mb-6">Speaking Engagements</h2>
