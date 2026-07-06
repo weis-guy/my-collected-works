@@ -94,7 +94,7 @@ export const writings: Writing[] = [
     outlet: "The Vocation Project (Substack)",
     date: "2024",
     url: "https://open.substack.com/pub/vocationproject/p/the-pursuit-of-life-without-work",
-    dek: "An essay on meaning, leisure, and the politics of a post-work imagination.",
+    dek: "A reflection on why a life freed from the necessity of work may not lead to fulfillment.",
   },
   {
     title:
