@@ -23,16 +23,22 @@ export const Route = createFileRoute("/writing")({
 });
 
 function WritingItem({ w }: { w: (typeof writings)[number] }) {
+  const title = w.url ? (
+    <a
+      href={w.url}
+      target="_blank"
+      rel="noreferrer"
+      className="underline underline-offset-2 hover:text-accent-ink"
+    >
+      {w.title}
+    </a>
+  ) : (
+    <span>{w.title}</span>
+  );
+
   return (
     <li className="text-base leading-relaxed">
-      <a
-        href={w.url}
-        target="_blank"
-        rel="noreferrer"
-        className="underline underline-offset-2 hover:text-accent-ink"
-      >
-        {w.title}
-      </a>
+      {title}
       <div className="text-sm text-ink-muted mt-1">
         {w.outlet} · {w.date}
       </div>
