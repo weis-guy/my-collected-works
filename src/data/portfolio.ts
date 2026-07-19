@@ -148,7 +148,7 @@ export const projects: Project[] = [
     outlet: "Foreign Policy for America",
     date: "2026",
     format: "Policy Memo",
-    dek: "Contributed to FP4A's Briefing Book Initiative, a project designed to equip 2026 Congressional candidates with practitioner-oriented foreign policy guidance. Authored content for the tariffs policy brief, one of 14 two-page memos covering major U.S. foreign policy priorities, developed in collaboration with Senior Advisors and topic coordinators. Acknowledged by name in the final publication.",
+    dek: "Contributed to FP4A's Briefing Book Initiative, a project designed to equip 2026 Congressional candidates with practitioner-oriented foreign policy guidance. Authored content for the tariffs policy brief, one of 14 two-page memos covering major U.S. foreign policy priorities, developed in collaboration with Senior Advisors and topic coordinators. Acknowledged by name in the final publication. Available upon request.",
   },
   {
     title:
