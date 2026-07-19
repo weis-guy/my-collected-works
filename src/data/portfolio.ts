@@ -2,9 +2,10 @@ export type Writing = {
   title: string;
   outlet: string;
   date: string;
-  url: string;
+  url?: string;
   dek?: string;
   topics?: string[];
+  category?: "op-ed" | "journal" | "substack";
   republishedIn?: { outlet: string; url: string }[];
 };
 
