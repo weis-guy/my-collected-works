@@ -37,10 +37,18 @@ export type Appearance = {
 };
 export const writings: Writing[] = [
   {
+    title: "Forthcoming Article",
+    outlet: "Naval War College Review",
+    date: "Forthcoming",
+    category: "journal",
+    dek: "A journal article on maritime strategy and national security currently under review.",
+  },
+  {
     title: "Cracks in Civil-Military Trust are Widening",
     outlet: "Defense Opinion",
     date: "2026",
     url: "https://defenseopinion.com/the-cracks-in-civil-military-trust-are-widening/1222/",
+    category: "op-ed",
     dek: "The state of U.S. civil-military relations is the most precarious it has been in many decades, with public confidence in the military falling sharply.",
   },
   {
@@ -48,6 +56,7 @@ export const writings: Writing[] = [
     outlet: "The Strategist — ASPI",
     date: "2025",
     url: "https://www.aspistrategist.org.au/ausaid-can-take-usaids-place-in-the-pacific-islands/",
+    category: "op-ed",
     dek: "Why Canberra is well-positioned to fill the development vacuum left by Washington across the Pacific.",
     republishedIn: [
       { outlet: "Pacific Islands News Association (PINA)", url: "https://pina.com.fj/2025/04/02/australia-can-take-usaids-place-in-the-pacific-islands/" },
@@ -60,6 +69,7 @@ export const writings: Writing[] = [
     outlet: "The MOC — Center for Maritime Strategy",
     date: "2024",
     url: "https://centerformaritimestrategy.org/publications/what-a-nato-skeptic-u-s-means-for-nato-maritime-security/",
+    category: "op-ed",
     dek: "Implications for the alliance's maritime posture as Washington's commitment to NATO comes into question.",
   },
   {
@@ -67,6 +77,7 @@ export const writings: Writing[] = [
     outlet: "The MOC — Center for Maritime Strategy",
     date: "2024",
     url: "https://centerformaritimestrategy.org/publications/the-weakest-link-single-points-of-failure-and-toward-a-national-cybersecurity/",
+    category: "op-ed",
     dek: "How concentrated dependencies in critical infrastructure create systemic cybersecurity risks.",
   },
   {
@@ -74,6 +85,7 @@ export const writings: Writing[] = [
     outlet: "The MOC — Center for Maritime Strategy",
     date: "2024",
     url: "https://centerformaritimestrategy.org/publications/military-personnel-need-robust-financial-education-more-than-ever/",
+    category: "op-ed",
     dek: "The case for stronger financial literacy programs across the U.S. armed forces.",
   },
   {
@@ -81,6 +93,7 @@ export const writings: Writing[] = [
     outlet: "The MOC — Center for Maritime Strategy",
     date: "2024",
     url: "https://centerformaritimestrategy.org/publications/transition-assistance-programs-for-the-submarine-industrial-base-workforce/",
+    category: "op-ed",
     dek: "How targeted transition assistance can address chronic workforce shortfalls in the U.S. submarine industrial base.",
   },
   {
@@ -88,6 +101,7 @@ export const writings: Writing[] = [
     outlet: "The MOC — Center for Maritime Strategy",
     date: "2024",
     url: "https://centerformaritimestrategy.org/publications/apprenticeships-build-the-arsenal-of-democracy/",
+    category: "op-ed",
     dek: "Reviving apprenticeship pipelines to rebuild America's defense manufacturing workforce.",
   },
   {
@@ -95,6 +109,7 @@ export const writings: Writing[] = [
     outlet: "The Vocation Project (Substack)",
     date: "2024",
     url: "https://open.substack.com/pub/vocationproject/p/the-pursuit-of-life-without-work",
+    category: "substack",
     dek: "A reflection on why a life freed from the necessity of work may not lead to fulfillment.",
   },
   {
@@ -103,6 +118,7 @@ export const writings: Writing[] = [
     outlet: "The Ithaca Times",
     date: "2024",
     url: "https://www.ithaca.com/opinion/guest_opinions/guest-opinion-the-affordable-care-act-insures-tens-of-thousands-of-new-york-s-college/article_bac74b34-fc0c-11ee-9f00-9354d0550bb5.html",
+    category: "op-ed",
     dek: "The ACA's outsized role in protecting health coverage for New York's college student population.",
   },
   {
@@ -110,6 +126,7 @@ export const writings: Writing[] = [
     outlet: "The MOC — Center for Maritime Strategy",
     date: "2023",
     url: "https://centerformaritimestrategy.org/publications/prioritizing-dockworkers-upholds-u-s-national-security/",
+    category: "op-ed",
     dek: "Why the people who move cargo through American ports are a national security asset.",
   },
   {
@@ -117,6 +134,7 @@ export const writings: Writing[] = [
     outlet: "The MOC — Center for Maritime Strategy",
     date: "2023",
     url: "https://centerformaritimestrategy.org/publications/resolving-maritime-border-dispute-opens-door-for-increased-energy-security/",
+    category: "op-ed",
     dek: "How settling contested waters can unlock new pathways for allied energy security.",
   },
   {
@@ -124,6 +142,7 @@ export const writings: Writing[] = [
     outlet: "The MOC — Center for Maritime Strategy",
     date: "2023",
     url: "https://centerformaritimestrategy.org/publications/subs-to-the-aussies-impact-of-the-aukus-partnership/",
+    category: "op-ed",
     dek: "Assessing the strategic and industrial implications of transferring Virginia-class submarines under AUKUS.",
   },
   {
@@ -131,6 +150,7 @@ export const writings: Writing[] = [
     outlet: "Cornell Intellectual Property and Ethics Club",
     date: "2022",
     url: "https://www.cornellintellectualproperty.com/blog-1-1/what-west-virginia-v-environmental-protection-agency-means-for-ip",
+    category: "op-ed",
     dek: "The major questions doctrine and its potential reach into intellectual property regulation.",
   },
   {
@@ -138,6 +158,7 @@ export const writings: Writing[] = [
     outlet: "The Viking — Central Catholic High School",
     date: "2018",
     url: "https://cchsviking.com/2255/opinion/the-fractured-gop-under-trump/",
+    category: "op-ed",
     dek: "An early opinion piece on the realignment of the Republican party under Donald Trump.",
   },
 ];
