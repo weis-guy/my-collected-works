@@ -70,12 +70,9 @@ function WritingItem({ w }: { w: (typeof writings)[number] }) {
 }
 
 function WritingPage() {
-  const publications = writings.filter(
-    (w) => !w.outlet.toLowerCase().includes("substack")
-  );
-  const substack = writings.filter((w) =>
-    w.outlet.toLowerCase().includes("substack")
-  );
+  const journal = writings.filter((w) => w.category === "journal");
+  const opeds = writings.filter((w) => w.category === "op-ed");
+  const substack = writings.filter((w) => w.category === "substack");
 
   return (
     <div className="min-h-screen bg-paper text-ink">
@@ -84,9 +81,18 @@ function WritingPage() {
         <h1 className="text-2xl font-medium mb-8">Writing</h1>
 
         <section>
-          <h2 className="text-xl font-medium mb-6">Publications</h2>
+          <h2 className="text-xl font-medium mb-6">Journal Articles</h2>
           <ul className="space-y-8">
-            {publications.map((w) => (
+            {journal.map((w) => (
+              <WritingItem key={w.title} w={w} />
+            ))}
+          </ul>
+        </section>
+
+        <section className="mt-16">
+          <h2 className="text-xl font-medium mb-6">Op-Eds & Commentary</h2>
+          <ul className="space-y-8">
+            {opeds.map((w) => (
               <WritingItem key={w.url} w={w} />
             ))}
           </ul>
