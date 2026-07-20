@@ -52,6 +52,14 @@ export const writings: Writing[] = [
     dek: "The state of U.S. civil-military relations is the most precarious it has been in many decades, with public confidence in the military falling sharply.",
   },
   {
+    title: "Anchor Acquisition and Force Development on Targeting China's C4ISR",
+    outlet: "Center for International Maritime Security",
+    date: "2025",
+    url: "https://cimsec.org/anchor-acquisition-and-force-development-on-targeting-chinas-c4isr/",
+    category: "op-ed",
+    dek: "U.S. Navy operational concepts must make targeting China's C4ISR architecture a core organizing principle for acquisition and force development.",
+  },
+  {
     title: "AusAID Can Take USAID's Place in the Pacific Islands",
     outlet: "The Strategist — ASPI",
     date: "2025",
